@@ -1,0 +1,16 @@
+{
+  "name": "@ecommerce/root",
+  "private": true,
+  "scripts": {
+    "bootstrap": "lerna bootstrap",
+    "kill-ports": "yarn kill-port --port 9000,9001,9002,9003",
+    "start": "yarn kill-ports && lerna run start --stream"
+  },
+  "devDependencies": {
+    "kill-port": "^2.0.0",
+    "lerna": "^5.0.0"
+  },
+  "workspaces": [
+    "packages/*"
+  ]
+}
