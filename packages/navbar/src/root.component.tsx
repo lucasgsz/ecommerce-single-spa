@@ -1,3 +1,5 @@
+import Nav from "./components/Navbar";
+
 export default function Root(props) {
-  return <section>{props.name} is mounted!</section>;
+  return <Nav />;
 }
